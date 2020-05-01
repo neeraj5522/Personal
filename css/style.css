@@ -156,10 +156,22 @@ p {
 .paddsection {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #f7f7f7;
-
 }
-
+#blog{
+  background-color: #f3f3f3;
+}
+.card-img{
+  overflow: hidden;
+}
+.card-img img{
+  transition: all 0.3s; 
+}
+.card-blog:hover .card-img img{
+  transform: scale(1.2,1.2);
+}
+.card-img img:hover{
+  opacity: 0.9;
+}
 .paddsections {
   padding-top: 90px;
   padding-bottom: 90px !important;
@@ -328,7 +340,7 @@ nav ul li a {
 }
 
 #about .about-descr .separator {
-  max-width: 80%;
+  max-width: 90%;
   margin-bottom: 0;
   text-align: left;
 }
@@ -341,7 +353,7 @@ nav ul li a {
   background: #212529;
   position: relative;
   padding-bottom: 80px;
-  padding-top: 80px;
+  /*padding-top: 80px;*/
   border-bottom: 1px solid #ddd;
 }
 
@@ -361,8 +373,8 @@ nav ul li a {
 
 .services-block .separator {
   margin: 0;
-  font-size: 13px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .services-block i {
@@ -409,8 +421,8 @@ nav ul li a {
 #portfolio {
   position: relative;
   padding-bottom: 50px;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  border-bottom: 1px solid #f7f7f7;
 }
 
 #portfolio .portfolio-list {
@@ -421,7 +433,9 @@ nav ul li a {
   display: inline-block;
   margin: 0;
 }
-
+img.img-responsive {
+    width: 100%;
+}
 #portfolio .portfolio-list .nav li {
   margin: 0 40px 0 0;
   float: left;
@@ -459,12 +473,33 @@ nav ul li a {
   margin-bottom: 30px;
   overflow: hidden;
   min-height: 260px;
+  position: relative;
 }
 
 .portfolio-thumbnail img {
   max-width: 100%;
+  transition: all 0.3s;
 }
-
+.portfolio-thumbnail:hover img{
+  opacity: 0.8;
+}
+.portfolio-thumbnail a:after{
+  content: "View";
+  position: absolute;
+  top: 48%;
+  left: 38%;
+  background-color: #212529;
+  padding: 7px 15px;
+  border-radius: 50px;
+  color: #f78600;
+  transition: all 0.3s;
+  display: none;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.portfolio-thumbnail:hover.portfolio-thumbnail a:after{
+  display: block;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  Journal
 /*-----------------------------------------------------------------------------------*/

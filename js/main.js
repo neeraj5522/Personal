@@ -95,11 +95,14 @@ $(document).ready(function() {
   $('.services-carousel').owlCarousel({
       autoplay: true,
       loop: true,
-      margin: 20,
+      margin: 45,
       dots: true,
+      autoplaySpeed: 2000,
+      autoplayTimeout:6000,
+      autoplayHoverPause: true,
       nav: false,
       responsiveClass: true,
-      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 3 } }
     });
 
   // ========================================================================= //
