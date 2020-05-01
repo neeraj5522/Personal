@@ -338,7 +338,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #services {
-  background: #f7f7f7;
+  background: #212529;
   position: relative;
   padding-bottom: 80px;
   padding-top: 80px;
@@ -352,7 +352,7 @@ nav ul li a {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #212529;
+  color: #ffffff;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
